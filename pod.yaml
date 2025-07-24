@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-k9sappswd-pod
+spec:
+  containers:
+  - name: demo-container-k8sappswd
+    image: k8sappswd:v1
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 5000
+      protocol: TCP
